@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <!-- Sidebar for Tools/Skills -->
+        <aside class="glass-panel sidebar">
+            <h2>Tool Library</h2>
+            <p>Click a tool to equip it to your agent.</p>
+            <div class="tool-list" id="tool-list">
+                <!-- Tools injected via JS -->
+            </div>
+        </aside>
+
+        <!-- Main Configuration Canvas -->
+        <main class="glass-panel canvas">
+            <header class="canvas-header">
+                <div>
+                    <h2>Agent Configuration</h2>
+                    <p>Define your agent's persona and capabilities.</p>
+                </div>
+                <button class="btn-deploy" id="deploy-btn">Deploy Agent</button>
+            </header>
+
+            <div class="config-section">
+                <div class="input-group">
+                    <label for="agent-name">Agent Name</label>
+                    <input type="text" id="agent-name" placeholder="e.g., CodeReviewer Alpha">
+                </div>
+                
+                <div class="input-group">
+                    <label for="system-prompt">System Instructions</label>
+                    <textarea id="system-prompt" rows="4" placeholder="You are a senior developer. Your job is to..."></textarea>
+                </div>
+            </div>
+
+            <div class="equipped-section">
+                <h3>Equipped Capabilities</h3>
+                <div class="equipped-grid" id="equipped-tools">
+                    <p class="empty-state" id="empty-state">No tools equipped yet. Select from the library.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
