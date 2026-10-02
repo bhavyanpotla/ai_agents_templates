@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="glass-panel sidebar">
+            <div class="logo">Nexus AI</div>
+            <nav>
+                <a href="#" class="active">Overview</a>
+                <a href="#">Agents</a>
+                <a href="#">Analytics</a>
+                <a href="#">Settings</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="glass-panel topbar">
+                <h2>Fleet Overview</h2>
+                <div class="user-profile">
+                    <span>Admin</span>
+                    <div class="avatar"></div>
+                </div>
+            </header>
+
+            <div class="stats-grid" id="stats-container">
+                <!-- Stat cards injected via JS -->
+            </div>
+
+            <div class="bottom-grid">
+                <div class="glass-panel activity-feed">
+                    <h3>Live Agent Activity</h3>
+                    <ul id="activity-list">
+                        <!-- Activity items injected via JS -->
+                    </ul>
+                </div>
+                <div class="glass-panel system-health">
+                    <h3>System Health</h3>
+                    <div class="health-indicator">
+                        <div class="pulse-ring"></div>
+                        <span class="status-text">All Systems Operational</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
